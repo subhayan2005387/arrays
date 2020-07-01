@@ -17,6 +17,11 @@ int main() {
     for(i=0;i<n;i++)
     {sum+=arr[i];
     }
-    return 0;
+     for(i=1;i<n;++i) {
+        if (arr[0]>arr[i])
+            arr[0]=arr[i];
+    }
+printf("Smallest element = %d", arr[0]);
+return 0;
     }
     
